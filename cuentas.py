@@ -3,9 +3,9 @@ class CuentaBancaria:
         self.numero_cuenta = numero_cuenta
         self.titular = titular
         self.__saldo = float(saldo_inicial)
-# Hotfix: Validación urgente para asegurar que el monto sea siempre positivo
+
     def depositar(self, monto: float):
-        # Corrección de seguridad/hotfix incluida: validar que monto > 0
+        # Hotfix: Validación urgente para asegurar que el monto sea siempre positivo
         if monto > 0:
             self.__saldo += monto
         else:
